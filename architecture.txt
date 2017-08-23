@@ -8,6 +8,10 @@ ALWAYS RUN terraform plan prior.
 +- recreate resource
 ~ updates resource in place
 
+Note worthy, for rax, if you change the flavor size, the vm will rebuild.
+if you change image id, the vm will be destroyed and recreated. 
+
+
 modle:
 directory with terraform file.
 
