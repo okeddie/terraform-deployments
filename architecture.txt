@@ -1,0 +1,31 @@
+providers: specify resource usage details.
+provisioner: each provider has sets of provisioners. creating nodes and dns.
+terraform stores attribute values.
+ALWAYS RUN terraform plan prior.
+
++ adds resource
+- destroys resource
++- recreate resource
+~ updates resource in place
+
+modle:
+directory with terraform file.
+
+WET we enjoy typing
+DRY no nested interpolation
+example of vars:
+provider "aws" {
+  region = "${var.aws_region}"
+}
+
+variables.tf file and specify vars:
+example:
+variable "aws_account"{
+  default = "some.thing-production"
+}
+
+variable "domain_name"{
+  default = "brotato-chips"
+}
+
+terraform fmt 
